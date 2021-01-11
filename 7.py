@@ -1,11 +1,12 @@
-import collections
+s = "ababd"
+
 
 #
 
 
 #
 # word_dict = collections.defaultdict(list)
-#
+# start = time.time()
 # for num in range(1, len(list(s)) + 1):
 #     if num == 5:
 #         break
@@ -15,8 +16,9 @@ import collections
 #             word_dict[len(word)].append(word)
 #
 # for word in word_dict[list(word_dict)[0]]:
-#     print("\"%s \"" % word)
-
+#     print("\"%s\"" % word)
+#
+# sec = time.time()
 
 # def longestPenlindrom(s):
 #     def expand(left, right):
@@ -39,10 +41,10 @@ import collections
 
 # print(range(0, 5))
 
-s = "babad"
-c = collections.Counter
 
-
+# c = collections.Counter
+#
+#
 def pelindrome(s, space):
     arr = []
     for i in range(0, (len(s) - space)):
@@ -64,5 +66,6 @@ def pelindrome(s, space):
 
 a = (pelindrome(s, 1))
 b = (pelindrome(s, 2))
-
-print(max(a + b, key=len))
+#
+print(a, b)
+# print(max(a + b, key=len))
