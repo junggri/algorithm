@@ -1,19 +1,20 @@
 input = [-1, 0, 1, 2, -1, -4]
 
 
-# def findZero(list):
-#     arr = []
-#     for i in range(len(list) - 1):
-#         for j in range(i + 1, len(list)):
-#             find_num = -(list[i] + list[j])
-#             if find_num in list[j + 1:]:
-#                 anw = sorted([list[i], list[j], find_num])
-#                 if anw not in arr:
-#                     arr.append(anw)
-#     print(arr)
-#
-#
-# findZero(input)
+def findZero(list):
+    arr = []
+    for i in range(len(list) - 1):
+        for j in range(i + 1, len(list)):
+            find_num = -(list[i] + list[j])
+            if find_num in list[j + 1:]:
+                anw = sorted([list[i], list[j], find_num])
+                if anw not in arr:
+                    arr.append(anw)
+    print(arr)
+
+
+findZero(input)
+
 
 def threeSum(self, nums):
     result = []
