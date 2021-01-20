@@ -27,6 +27,7 @@ def makeList(input):
             node.val = i
             node.next = 'node%s+1' % i
         print(node)
-    
+        ㅇ
+
 
 a = makeList(input)
