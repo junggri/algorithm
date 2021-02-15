@@ -1,8 +1,7 @@
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
-        stack = []
-
-        for i in s:
-            if not i in stack:
-                stack.append(i)
-        return "".join(sorted(stack))
+        for char in sorted(set(s)):
+            suffix = s[s.index(char):]
+            if set(s) == set(suffix):
+                return char + self.removeDuplicateLetters(suffix.replace(char, ''))
+        return ""
