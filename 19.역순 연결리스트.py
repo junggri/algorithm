@@ -24,3 +24,4 @@ class Solution:
                 prev.next = rev
                 break
         return head
+                                                      
